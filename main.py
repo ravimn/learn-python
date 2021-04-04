@@ -1,10 +1,9 @@
 import fibo
 import matplotlib.pyplot as plt
 
-if __name__ == '__main__':
-    print('Hello World')
-    i = 1000000
-    res = fibo.fib(i)
+
+def plotFib(i=1000, x=0, y=1):
+    res = fibo.fib()
 
     n = len(res)
     print(n)
@@ -16,6 +15,6 @@ if __name__ == '__main__':
     plt.show()
 
 
-
-
-
+if __name__ == '__main__':
+    print('Hello World')
+    plotFib()
