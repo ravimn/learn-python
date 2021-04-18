@@ -31,6 +31,8 @@ def patternOf(a):
     return patternOfX
 
 if __name__ == "__main__":
+    misc.right_justify('monty', 70)
+
     fplus = patternOf('+')
     fpipe = patternOf('|')
 
