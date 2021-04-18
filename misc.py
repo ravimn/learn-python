@@ -19,3 +19,8 @@ def convertDistance(metric, cvtType) -> float:
     if (cvtType == constant.CVTMILETOKM):
         return metric * constant.MILETOKM
 
+def right_justify(st:str, column_length:int = 70):
+    return ((lambda s, l: ' ' * (l - len(s)) + s if (len(s) < l) else s)(st, column_length))
+
+
+
